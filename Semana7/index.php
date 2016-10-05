@@ -1,7 +1,8 @@
 <!DOCTYPE html>
  <?php
-        // put your code here
-            //Formulario de registro de cursos.
+    require_once("curso.php");
+    $nuevo = new curso();
+    $nuevo->NuevoCurso($_POST ['txtnombre'], $_POST ['txthoras'], $_POST ['txtcredito'])
 ?>
 <html>
     <head>

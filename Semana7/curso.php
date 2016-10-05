@@ -47,7 +47,11 @@
      function setCreditos($creditos) {
          $this->creditos = $creditos;
      }
-
-
+     
+public function NuevoCurso($nombre,$horas,$creditos) {
+    $link = mysql_connect("localhost:8080", "root", "") or die('No se pudo conectar: ' . mysql_error());
+mysql_select_db("semana7");
+$consulta="insert into curso(nombre_curso,horas_curso,creditos_curso) values ('$nombre','$horas','$credito')";
+}
  }
 
